@@ -4,8 +4,8 @@ from sys import argv
 # Sets script and filename variables to values obtained from argv
 script, filename = argv
 
-# Sets variable text equal to the command to open whatever
-# file was input on the command line.
+# Sets variable txt equal to a pointer to whatever file was
+# entered on the command line.
 txt = open(filename)
 
 # Prints the string with the formatted variable
