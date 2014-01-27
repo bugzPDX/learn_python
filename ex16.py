@@ -11,7 +11,7 @@ print "If you do want that, hit RETURN."
 raw_input("?")
 
 print "Opening the file..."
-target = open(filename, 'w')
+target = open(filename, 'w+')
 
 print "Truncating the file. Goodbye!"
 target.truncate()
@@ -23,13 +23,11 @@ line2 = raw_input("line 2: ")
 line3 = raw_input("line 3: ")
 
 print "I'm going to write these to the file."
+lines = "%s\n%s\n%s\n" % (line1, line2, line3)
+target.write(lines)
+target.seek(0)
+print "Then I will print them for you"
 
-target.write(line1)
-target.write("\n")
-target.write(line2)
-target.write("\n")
-target.write(line3)
-target.write("\n")
-
+print target.read()
 print "And finally, we close it."
 target.close()
