@@ -1,0 +1,24 @@
+Prune Wickart
+503-516-7872 Cell
+503-690-2448 Home
+prune@PDXCodeGuild.com
+
+The Stack:
+View - how we view it - HTML, CSS, XML
+between view and control lives JavaScript and JQuery
+Control - takes over from user input and asks model how to adjust and display to user.
+Model - structure - starting here with python
+MVC
+
+Data types:
+
+Integers - 1, -15, +30768
+Real - floating point 1.0, 3.1415926535
+Strings - "Hello, world!"
+Variables - a = 1, this = that
+
+1,$s/a/b/gc
+:%s|1/2|0.5|gc
+This will allow a substitution of one string "a" to another string "b" within a file.
+1 - beginning of file $ to end s/ substitute /a this string /b with this string /g global every occurance c confirm
+:map ] :w:nn
