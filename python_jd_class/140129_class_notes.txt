@@ -22,3 +22,9 @@ Variables - a = 1, this = that
 This will allow a substitution of one string "a" to another string "b" within a file.
 1 - beginning of file $ to end s/ substitute /a this string /b with this string /g global every occurance c confirm
 :map ] :w:nn
+
+PEDMAS
+Parentheses
+Exponents
+Div/Mult
+Add/Sub
