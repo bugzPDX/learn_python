@@ -14,7 +14,7 @@ def gold_room():
         print "Nice, you're not greedy, you win!"
         exit(0)
     else:
-        dead("You greedy bastard!" /
+        dead("You greedy bastard!"
              " You caused an avalanche of coins and now you are dead!")
 
 
@@ -44,7 +44,7 @@ def bear_room():
 
 
 def cthulhu_room():
-    print """Here you see the great evil Cthulhu.
+    print """Here you see the Dark Lord Cthulhu.
     He, it, whatever stares at you and you go insane.
     Do you [flee] for your life or [eat] your head?"""
 
