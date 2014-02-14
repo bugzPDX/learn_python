@@ -11,7 +11,7 @@ config = {
 	'author_email': 'lhewus@gmail.com',
 	'version': '0.1',
 	'install_requires': ['nose'],
-	'packages': ['FIRST_PROJECT'],
+	'packages': ['NAME'],
 	'scripts': [],
 	'name': 'projectname'
 }
