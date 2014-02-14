@@ -4,16 +4,6 @@ from random import choice
 from textlist import text_list
 
 
-'''def text_list(listtext, sep1=", ", sep2=", and "):
-    n = len(listtext)
-    if n > 1:
-        return sep1.join(listtext[:-1]) + sep2 + listtext[-1]
-    elif n == 1:
-        return listtext[0]
-    else:
-        return "nothing!"'''
-
-
 class Dungeon(object):
 
     def __init__(self, x, y):
