@@ -106,4 +106,4 @@ harry = Halibut("sam")
 
 harry.mom = "Cindy"
 print "Hi %s!" % harry.mom
-print harry
+
