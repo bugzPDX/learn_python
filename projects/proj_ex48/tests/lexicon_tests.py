@@ -1,9 +1,9 @@
 from nose.tools import *
-from ex48 import lexicon
+from ex48.ex48 import lexicon
 
 
 def test_directions():
-    assert_equal(lexicon.scan('north'), [('direction')])
+    assert_equal(lexicon.scan('north'), [('direction', 'north')])
     result = lexicon.scan("north south east")
     assert_equal(result, [('direction', 'north'),
                           ('direction', 'south'),
@@ -29,8 +29,15 @@ def test_stops():
 def test_nouns():
     assert_equal(lexicon.scan('bear'), [('noun', 'bear')])
     result = lexicon.scan('bear princess')
-    assert_equal(result, [('noun', 'bear')
+    assert_equal(result, [('noun', 'bear'),
                           ('noun', 'princess')])
+
+def test_phrases():
+    result = lexicon.scan('go stop the bear')
+    assert_equal(result, [('verb', 'go'),
+                          ('verb', 'stop'),
+                          ('stop', 'the'),
+                          ('noun', 'bear')])
 
 
 def test_numbers():
