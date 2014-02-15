@@ -3,7 +3,7 @@
 from random import choice
 from textlist import text_list
 
-
+# Class for creating the main playing area
 class Dungeon(object):
 
     def __init__(self, x, y):
@@ -17,10 +17,12 @@ class Dungeon(object):
             for j in range(0, y):
                 self.rooms[i].append(None)
 
+    # function to add rooms in an array
     def add_room(self, x, y, room):
 
         self.rooms[x][y] = room
 
+    # funtions to handle navigation
     def north(self, args=[]):
         self.go(['north'])
 
@@ -77,6 +79,7 @@ class Dungeon(object):
         return self.rooms[self.cur_x][self.cur_y]
 
 
+# Class for creating rooms. Default "Kitchen"
 class Room(object):
 
     def __init__(self, name="Kitchen"):
@@ -110,6 +113,8 @@ class Room(object):
         return None
 
 
+# Class for creating rooms that contain a monster
+# Will probably create a separate monster class.
 class MonsterRoom(Room):
 
     def __init__(self, monster, name="Monster Room"):
@@ -140,6 +145,7 @@ class MonsterRoom(Room):
                 exit(0)
 
 
+# Class for creating a character
 class Character(object):
 
     def __init__(self, c_name):
@@ -193,10 +199,13 @@ class Monster(Character):
 
     pass
 
+# Sets these so they can be global.
 my_adventurer = None
 my_dungeon = None
 
 # This is where things start happening.
+# Rooms, characters and such are created.
+# Player is prompted for a name.
 
 
 def start():
