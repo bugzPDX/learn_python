@@ -100,7 +100,8 @@ class Room(object):
     def look(self, args=[]):
         self.enter()
         if self.__inventory:
-            print "You see %s lying on the floor" % text_list(self.__inventory.values())
+            print "You see %s lying on the floor" \
+                % text_list(self.__inventory.values())
         else:
             return
 
@@ -146,6 +147,7 @@ class MonsterRoom(Room):
                 start()
             else:
                 exit(0)
+
 
 class Character(object):
 
