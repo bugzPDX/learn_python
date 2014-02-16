@@ -3,6 +3,7 @@
 from random import choice
 from textlist import text_list
 
+
 # Class for creating the main playing area
 class Dungeon(object):
 
